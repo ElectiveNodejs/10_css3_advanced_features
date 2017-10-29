@@ -1,0 +1,32 @@
+$fontStack: 'Nunito', sans-serif;
+$fontColor: #384047;
+$bgColor: #f4f7f8;
+
+@mixin boxSizing($type){
+  -moz-box-sizing: $type;
+  -webkit-box-sizing: $type;
+  box-sizing: $type;
+}
+
+*, *:before, *:after {
+  @include boxSizing(border-box);
+}
+
+body {
+  font-family: $fontStack;
+  color: $fontColor;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: $bgColor;
+  border-radius: 8px;
+}
+
+h1, h2 {
+  margin: 30px 0;
+  text-align: center;
+}
+

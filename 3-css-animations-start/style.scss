@@ -1,0 +1,30 @@
+$bodyBg: #303030;
+$wrapBg: #222;
+$fontStack: 1.1em sans-serif;
+$black6: rgba(0, 0, 0, .6);
+$white0: rgba(255, 255, 255, 0);
+$white1: rgba(255, 255, 255, .1);
+$gradientRed1: #f5a8a8;
+$gradientRed2: #f08080;
+
+body {
+	background: $bodyBg;
+	font: $fontStack;
+}
+.wrap {
+	box-sizing: border-box;
+	margin: 70px auto;
+	padding: 5px;
+	width: 600px;
+	border-radius: 10px;
+	background: $wrapBg;
+	box-shadow: inset 0 0 1px $black6, 0 1px 0 $white1;
+}
+.prog-bar {
+	height: 60px;
+	border-radius: 5px;
+	background: repeating-linear-gradient(-45deg, $white1, $white0 12px), linear-gradient($gradientRed1, $gradientRed2);
+} 
+
+/*	Keyframes
+------------------------------------------ */

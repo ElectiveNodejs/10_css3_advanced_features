@@ -1,0 +1,51 @@
+@import '_vars';
+
+/* ================================= 
+  Photo Overlay Transitions
+==================================== */
+
+.photo-overlay {
+	opacity: 0;
+	transition: opacity .5s;
+}
+.photo-overlay:hover {
+	opacity: 1;
+}
+
+/* ================================= 
+  Button Transitions
+==================================== */
+
+.button {
+	transition: background .3s, color .3s;
+}
+.button:hover {
+	color: $btnTextColor;
+	background: $mainBlue;
+}
+
+/* ================================= 
+  Image Transforms & Transitions
+==================================== */
+
+/* -- Row 1 --------- */
+
+
+
+/* -- Row 2 --------- */
+
+
+
+/* -- Row 3 --------- */
+
+
+
+/* -- Logo ---------- */
+
+
+
+
+
+
+
+
