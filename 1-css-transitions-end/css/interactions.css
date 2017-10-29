@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* ================================= 
+  Button Transitions
+==================================== */
+.button {
+  color: #fff;
+  background: #4a89ca;
+  transition-duration: 1s;
+  /* 1000ms */
+  /* targeting only the background property to be transitioned */
+  /* the border-radius change will be 'snappy' */
+  transition-property: background;
+  /* default: all */
+  transition-timing-function: ease-in;
+  /* see more: https://codepen.io/Guilh/full/vLpOGp */ }
+  .button:hover {
+    background: #d36a62;
+    border-radius: 1em; }
+
+/* ================================= 
+  Photo Overlay Transitions
+==================================== */
+img {
+  transition-duration: 1s; }
+  img:hover {
+    opacity: 0; }
+
+/*
+	Exercise:
+	Add a transition on hover for the image descriptions 
+	(start with bottom three photos). 
+
+	The description should slowly appear on hover and disappear 
+	when you don’t hover. Use opacity and do the same for the top 
+	3 images - pay attention to the classes and nested divs.
+
+*/
+
+/*# sourceMappingURL=interactions.css.map */

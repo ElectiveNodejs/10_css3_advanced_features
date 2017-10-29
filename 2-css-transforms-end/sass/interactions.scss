@@ -1,0 +1,96 @@
+@import '_vars';
+
+/* ================================= 
+  Photo Overlay Transitions
+==================================== */
+
+.photo-overlay {
+	opacity: 0;
+	transition: opacity .5s;
+}
+.photo-overlay:hover {
+	opacity: 1;
+}
+
+/* ================================= 
+  Button Transitions
+==================================== */
+
+.button {
+	transition: background .3s, color .3s;
+}
+.button:hover {
+	color: $btnTextColor;
+	background: $mainBlue;
+}
+
+/* ================================= 
+  Image Transforms & Transitions
+==================================== */
+
+/* -- Row 1 --------- */
+
+img{
+	// transform: rotate(25deg);
+	// transform: rotate(-45deg);
+	/* the rotate function accepts arguments in angle units */
+	transition: transform .5s;
+	// transform-origin: 10% 10%;
+	transform-origin: 0 0; /* top left */
+
+	&:hover{
+		// transform: rotate(45deg);
+		// transform: rotate(360deg);
+		transform: rotate(1turn);
+	}
+}
+
+
+/* -- Row 2 --------- */
+
+// When scaling up, make sure that the size that you scale to is smaller or equal to the actual size of the images.
+
+.photo:hover img{
+	transform: scale(1.2);
+	// transform: translateX(100px); /* move the picture on the X axis 100px to the right */
+	// transform: translateY(-50px); /* move the picture on the Y axis 50px up */
+	// transform: translate(100px, -50px); /* apply both changes */
+}
+
+
+/* -- Row 3 --------- */
+
+.slide .photo-overlay{
+	transform: translateX(-100%);
+}
+
+.slide .photo-overlay, .slide img{
+	transition: transform .6s ease-in-out;
+}
+
+/* affect child element on parent element hover */
+.slide:hover .photo-overlay{
+	transform: translateX(0);
+}
+
+.slide:hover img{
+	transform: translateX(100%);
+}
+
+
+
+/* -- Logo ---------- */
+
+.logo{
+	transition: transform .6s ease-in-out;
+
+	&:hover{
+		transform: scale(1.5) rotate(15deg);
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+@import '_vars';
+
+/* ================================= 
+  Button Transitions
+==================================== */
+
+.button {
+	color: $btnTextColor;
+	background: $btnBgColor;
+	transition-duration: 1s; /* 1000ms */
+
+	/* targeting only the background property to be transitioned */
+	/* the border-radius change will be 'snappy' */
+	transition-property: background; /* default: all */
+	transition-timing-function: ease-in;
+	/* see more: https://codepen.io/Guilh/full/vLpOGp */
+
+
+	&:hover{
+		background: $btnBgColorHover;
+		border-radius: 1em;
+	}
+}
+
+
+/* ================================= 
+  Photo Overlay Transitions
+==================================== */
+
+
+img{
+	transition-duration: 1s;
+
+	&:hover{
+		// display: none; /* this will cause the images to flicker because 'display' is not an animatable property */
+
+		opacity: 0;
+	}
+}
+
+
+/*
+	Exercise:
+	Add a transition on hover for the image descriptions 
+	(start with bottom three photos). 
+
+	The description should slowly appear on hover and disappear 
+	when you don’t hover. Use opacity and do the same for the top 
+	3 images - pay attention to the classes and nested divs.
+
+*/
+
+.photo-overlay{
+	// ...
+
+	&:hover{
+		// ...
+	}
+}
+
+
+
+
+
